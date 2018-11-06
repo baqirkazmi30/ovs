@@ -48,7 +48,7 @@ struct bfd *bfd_configure(struct bfd *, const char *name,
                           const struct smap *smap,
                           struct netdev *netdev);
 struct bfd *bfd_ref(const struct bfd *);
-void bfd_unref(struct bfd *)
+void bfd_unref(struct bfd *);
 
 void bfd_account_rx(struct bfd *, const struct dpif_flow_stats *);
 bool bfd_forwarding(struct bfd *);
